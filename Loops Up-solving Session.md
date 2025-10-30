@@ -66,14 +66,16 @@ cout << "Negative: " << neg << el;
 char ch; cin >> ch;
 string CF = "codeforces";
 
+bool found = false;
 for (int i = 0; i < 10; i++) {
 	if (ch == CF[i]) {
+		found = true;
 		cout << "YES" << endl;
 		return;
 	}
 }
 
-cout << "NO" << el;
+if(!found) cout << "NO" << el;
 ```
 
 ## 6th Problem
